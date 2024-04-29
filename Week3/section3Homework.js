@@ -10,13 +10,17 @@ function greetCustomer() {
     }
   }
 }
-greetCustomer();
 
 function getPizzaOrder(Size, Crust, ...Toppings) {
-  console.log(
-    `One ${Size} ${Crust} crust pizza with ${Toppings}... coming up!`
-  );
-  return ["Size", "Crust", "Toppings"];
+  let topping = "";
+  for (let y = 0; y < pizzaToppings.length; y++) {
+    topping += pizzaToppings[y];
+    if (y !== pizzaToppings.length - 1) {
+      topping += ", ";
+    }
+  }
+  console.log(`One Medium Thin crust pizza with ${topping}...coming up!`);
+  return [Size, Crust, Toppings];
 }
 
 function preparePizza([Size, Crust, Toppings]) {
@@ -24,16 +28,20 @@ function preparePizza([Size, Crust, Toppings]) {
   const pizza = {
     Size: "Medium",
     Crust: "Thin",
-    Toppings: "Bacon"
+    Toppings: ["Cheese", "Peperoni", "Sausage", "Bacon"]
   };
   return pizza;
 }
 
 function servePizza(pizza) {
-  console.log(
-    `Order up! Here's your ${pizza.Size} ${pizza.Crust} crust pizza with ${pizza.Toppings}. Enjoy!`
-  );
-  return pizza;
+  const keys = Object.keys(pizza);
+  for (let z = 0; z < keys.length; z++) {
+    console.log(
+      `Order up! Here's your Medium Thin crust pizza with ${
+        pizza[keys[2]]
+      }. Enjoy!`
+    );
+  }
 }
 
-servePizza(preparePizza(getPizzaOrder("Medium", "Thin", "Bacon")));
+servePizza(preparePizza(getPizzaOrder(greetCustomer())));
