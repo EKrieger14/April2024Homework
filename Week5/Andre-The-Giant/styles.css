@@ -1,0 +1,161 @@
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: auto;
+}
+
+img {
+  height: 100%;
+}
+
+div {
+  border: 2px solid burlywood;
+  margin: 10px;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#introPic {
+  width: 50%;
+  height: 50%;
+  padding: 6px;
+}
+
+#bio > li {
+  padding: 2px;
+  display: inline;
+}
+
+#pro {
+  width: auto;
+}
+
+#Stuff {
+  margin: 12px;
+}
+
+#earlyLife {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+#earlyLife > h2 {
+  margin: 8px;
+}
+#earlyLife > p {
+  margin: 6px;
+  text-align: left;
+}
+
+#earlyCareer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#earlyCareer > img {
+  max-width: 500px;
+  padding: 6px;
+}
+#earlyCareer > h2 {
+  margin: 0px;
+}
+#earlyCareer > p {
+  margin: 6px;
+  text-align: left;
+}
+
+#proCareer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#proCareer > img {
+  max-width: 500px;
+  padding: 6px;
+}
+#proCareer > h2 {
+  margin: 0px;
+}
+#proCareer > p {
+  margin: 6px;
+  text-align: left;
+}
+
+#acting {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#acting > h2 {
+  margin: 0px;
+}
+#acting > p {
+  margin: 6px;
+  text-align: left;
+}
+
+#notable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+#notable > h2 {
+  margin: 4px;
+}
+#achievements {
+  margin: 16px;
+}
+#achievements > li {
+  text-align: left;
+}
+
+#personal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#personal > h2 {
+  margin: 4px;
+}
+#personal > p {
+  margin: 6px;
+  text-align: left;
+}
+@media (max-width: 375px) {
+  #earlyCareer > img {
+    max-width: 300px;
+  }
+  #proCareer > img {
+    max-width: 300px;
+  }
+}
